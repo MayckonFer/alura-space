@@ -1,0 +1,38 @@
+.spacing {
+  width: 100%;
+  max-width: 144rem;
+  padding: 5.3rem 2rem 0;
+  margin: 0 auto 4rem;
+
+  .menu_and_banner {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    width: 100%;
+
+    @media (min-width: 992px) {
+      align-items: flex-start;
+
+      > img {
+        margin: 0 auto;
+      }
+    }
+
+    @media (min-width: 1440px) {
+      flex-direction: row;
+    }
+  }
+
+  .content_gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+
+    margin-top: 8rem;
+
+    @media (min-width: 1200px) {
+      flex-direction: row;
+    }
+  }
+}

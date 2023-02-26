@@ -1,0 +1,42 @@
+.header {
+  padding: 1.5rem 0;
+
+  .spacing {
+    width: 100%;
+    max-width: 144rem;
+    padding: 0 2rem;
+    margin: 0 auto;
+
+    > div {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      justify-content: space-between;
+      align-items: center;
+
+      @media (min-width: 992px) {
+        flex-direction: row;
+      }
+
+      .header_container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: 0.1rem solid var(--BORDER);
+        border-radius: 0.5rem;
+        padding: 0.5rem;
+        width: 100%;
+        max-width: 56rem;
+
+        > input {
+          background: none;
+          border: none;
+          outline: none;
+          color: var(--TT_COLOR);
+          width: 100%;
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+}
